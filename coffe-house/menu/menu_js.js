@@ -60,7 +60,7 @@ function closeInterface(event) {
 
 let initialWindowWidth = window.innerWidth;
 
-window.addEventListener('resize', function () { // update modal menu size
+window.addEventListener('resize', function () {
     if (modalMenu.classList.contains('modal-menu-on')) {
         const modalMenuWidth = modalMenu.offsetWidth;
         const modalMenuHeight = modalMenu.offsetHeight;
@@ -79,10 +79,6 @@ window.addEventListener('resize', function () { // update modal menu size
         initialWindowWidth = window.innerWidth;
     }
 })
-
-// burger /\
-
-// product cards \/
 
 const productCards = document.querySelectorAll('.product-item');
 const offerButtons = document.querySelectorAll('.offer-button');
@@ -201,8 +197,6 @@ function loadMore() {
     document.querySelector('.item-8').style.display = 'flex';
     document.querySelector('.refresh').style.display = 'none';
 }
-
-// modal menu \/
 
 const modalName = document.querySelector('.modal-name');
 const modalDesc = document.querySelector('.modal-desc');

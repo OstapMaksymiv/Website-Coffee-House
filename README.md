@@ -60,4 +60,4 @@ The project relies on the following external dependencies:
 - **Inter Font**: Used for consistent and visually appealing typography.
 
 ## Deployment
-The Coffee House project is deployed and can be accessed [here](https://ostapmaksymiv.github.io/Website-Coffee-House/coffe-house/).
+The Coffee House project is deployed and can be accessed [here](https://ostapmaksymiv.github.io/Website-Coffee-House/).

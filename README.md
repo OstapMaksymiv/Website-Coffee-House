@@ -11,6 +11,7 @@ Welcome to the Coffee House project! This web application is designed to showcas
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
+- [Deployment](#deployment)
 
 ## Introduction
 The Coffee House project is a web application that aims to offer users an immersive experience into the world of premium coffee. With a visually appealing design, informative content, and seamless navigation, the website provides an enjoyable user experience.
@@ -58,8 +59,5 @@ The project relies on the following external dependencies:
 
 - **Inter Font**: Used for consistent and visually appealing typography.
 
-
-- Email: coffeehouse@example.com
-- Twitter: [@CoffeeHouseDev](https://twitter.com/CoffeeHouseDev)
-- Instagram: [@CoffeeHouseGram](https://www.instagram.com/CoffeeHouseGram)
-- Facebook: [CoffeeHouseBook](https://www.facebook.com/CoffeeHouseBook)
+## Deployment
+The Coffee House project is deployed and can be accessed [here](https://ostapmaksymiv.github.io/Website-Coffee-House/coffe-house/).

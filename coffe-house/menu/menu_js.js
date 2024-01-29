@@ -70,7 +70,7 @@ window.addEventListener('resize', function () {
         const menuLeftCoord = Math.floor((modalCoordWrapperWidth / 2 - modalMenuWidth / 2) / modalCoordWrapperWidth * 100);
         modalMenu.setAttribute('style', `top: ${menuTopCoord}%; left: ${menuLeftCoord}%; opacity: 1; transform: scale(1); transition: 0.5s ease`);
     }
-    if (window.innerWidth > initialWindowWidth && window.innerWidth > 768 && initialWindowWidth <= 768 && !modalWrapper.classList.contains('modal-wrapper-on')) { // close the burger menu when going from 768px to higher values
+    if (window.innerWidth > initialWindowWidth && window.innerWidth > 768 && initialWindowWidth <= 768 && !modalWrapper.classList.contains('modal-wrapper-on')) {
         body.classList.remove('lock');
         burgerMenuContent.classList.remove('burger-menu-active');
         burgerButton.classList.remove('burger-button-active');
@@ -148,10 +148,10 @@ async function updateCards(event) {
     loadProgress.style.width = '60%';
 
     for (let i = 0; i < requiredProducts.length; i++) {
-        productCards[i].firstElementChild.style['background-image'] = `url("../images/${requiredProducts[i].name.replaceAll(' ', '')}.png")`; // product image
-        productCards[i].lastElementChild.children[0].innerHTML = requiredProducts[i].name; // product name
-        productCards[i].lastElementChild.children[1].innerHTML = requiredProducts[i].description; // product description
-        productCards[i].lastElementChild.children[2].innerHTML = '$' + requiredProducts[i].price; // product price
+        productCards[i].firstElementChild.style['background-image'] = `url("../images/${requiredProducts[i].name.replaceAll(' ', '')}.png")`;
+        productCards[i].lastElementChild.children[0].innerHTML = requiredProducts[i].name;
+        productCards[i].lastElementChild.children[1].innerHTML = requiredProducts[i].description;
+        productCards[i].lastElementChild.children[2].innerHTML = '$' + requiredProducts[i].price;
     }
 
     for (let i = 0; i < requiredProducts.length; i++) {

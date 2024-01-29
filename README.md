@@ -58,14 +58,6 @@ The project relies on the following external dependencies:
 
 - **Inter Font**: Used for consistent and visually appealing typography.
 
-## Contributing
-We welcome contributions from the community! If you have ideas for improvements or new features, please submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
-## Contact
-If you have any questions or suggestions, feel free to reach out to us:
 
 - Email: coffeehouse@example.com
 - Twitter: [@CoffeeHouseDev](https://twitter.com/CoffeeHouseDev)

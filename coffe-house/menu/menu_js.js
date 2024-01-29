@@ -311,3 +311,9 @@ function updateModalPrice(event) {
     }
     return;
 }
+const coordinates = " 8558 Green Rd.,  LA";
+        const googleMapsLink = document.getElementById("googleMapsLink");
+        googleMapsLink.addEventListener("click", function (event) {
+            event.preventDefault();
+            window.open(`https://www.google.com/maps?q=${coordinates}`, "_blank");
+        });

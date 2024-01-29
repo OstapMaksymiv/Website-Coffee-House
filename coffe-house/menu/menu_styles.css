@@ -50,7 +50,7 @@ body {
 
 .link{
     position: relative;
-    cursor: default;
+    cursor: pointer;
 }
 
 .link::after{

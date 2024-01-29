@@ -2,16 +2,6 @@ const body = document.querySelector('body');
 const burgerMenuContent = document.querySelector('.burger-menu-content');
 const burgerButton = document.querySelector('.burger-button');
 
-// burgerButton.addEventListener('click', function() {
-//     toggleMobileMenu();
-// });
-
-// function toggleMobileMenu() {
-//     if (window.innerWidth <= 768) {
-//         burgerMenuContent.style.display = (burgerMenuContent.style.display === 'none') ? 'flex' : 'none';
-//     }
-// }
-
 burgerButton.addEventListener('click', toggleBurger);
 
 function toggleBurger() {
@@ -35,7 +25,7 @@ function closeInterface(event) {
 
 let initialWindowWidth = window.innerWidth;
 
-window.addEventListener('resize', function () { // close the burger menu when going from 768px to higher values 
+window.addEventListener('resize', function () {
     if (window.innerWidth > initialWindowWidth && window.innerWidth > 768 && initialWindowWidth <= 768) {
         body.classList.remove('lock');
         burgerMenuContent.classList.remove('burger-menu-active');
@@ -45,118 +35,13 @@ window.addEventListener('resize', function () { // close the burger menu when go
         initialWindowWidth = window.innerWidth;
     }
 })
-// let touchStartX, touchCurrentX;
-// function init() {
-//     width = document.querySelector('.slider').offsetWidth;
-//     isSmallScreen = container.clientWidth <= 630;
-//     sliderLine.style.width = width * images.length + 'px';
-//     images.forEach(item => {
-//         item.style.width = isSmallScreen || window.innerWidth <= 630 ? width + 'px' : 'auto';
-//         item.style.height = isSmallScreen ? width + 'px' : 'auto';
-//     });
-//     rollSlider();
-// }
-// init();
-// window.addEventListener('resize', init);
-// function fillLine(index) {
-//     lines.forEach(line => {
-//         line.style.width = '0';
-//     });
-//     lines[index].style.width = '100%';
-// }
 
-// function autoFillProgress() {
-//     autoFillInterval = setInterval(() => {
-//         fillLine((count + 1) % lines.length);
-//         plus();
-//     }, 3000);
-// }
-
-// setTimeout(() => {
-//     lines[0].style.width = '100%';
-//     autoFillProgress();
-// }, 500);
-// function plus() {
-//     count++;
-//     if (count >= images.length) {
-//         count = 0;
-//     }
-//     rollSlider();
-//     updateProgress();
-// }
-
-// function minus() {
-//     count--;
-//     if (count < 0) {
-//         count = images.length - 1;
-//     }
-//     rollSlider();
-//     updateProgress();
-// }
-
-// function resetProgress() {
-//     lines.forEach(line => {
-//         line.style.width = '0';
-//     });
-// }
-
-// document.querySelector('.slider-next').addEventListener('click', function () {
-//     isAutoFilling = false;
-//     clearInterval(autoFillInterval);
-//     plus();
-//     autoFillProgress();
-// });
-
-// document.querySelector('.slider-prev').addEventListener('click', function () {
-//     isAutoFilling = false;
-//     clearInterval(autoFillInterval);
-//     minus();
-//     autoFillProgress();
-// });
-
-// function updateProgress() {
-//     resetProgress();
-//     lines[count].style.width = '100%';
-// }
-
-// function rollSlider() {
-//     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
-// }document.querySelector('.slider').addEventListener('touchstart', function (e) {
-//     touchStartX = e.touches[0].clientX;
-// });
-
-// document.querySelector('.slider').addEventListener('touchmove', function (e) {
-//     touchCurrentX = e.touches[0].clientX;
-//     diffX = touchStartX - touchCurrentX;
-//     sliderLine.style.transform = 'translateX(' + (-count * width - diffX) + 'px)';
-// });
-
-// document.querySelector('.slider').addEventListener('touchend', function () {
-//     autoSlide();
-// });
-
-// function autoSlide() {
-//     if (diffX < -100) {
-//         isAutoFilling = false;
-//         clearInterval(autoFillInterval);
-//         minus();
-//         autoFillProgress();
-//     } else if (diffX > 100) {
-//         isAutoFilling = false;
-//         clearInterval(autoFillInterval);
-//         plus();
-//         autoFillProgress();
-//     } else {
-//         sliderLine.style.transform = 'translateX(' + (-count * width) + 'px)';
-//     }
-// }
 const coordinates = " 8558 Green Rd.,  LA";
         const googleMapsLink = document.getElementById("googleMapsLink");
         googleMapsLink.addEventListener("click", function (event) {
             event.preventDefault();
             window.open(`https://www.google.com/maps?q=${coordinates}`, "_blank");
         });
-
 
 const leftArrow = document.querySelector('.left-arrow');
 const rightArrow = document.querySelector('.right-arrow');
@@ -304,8 +189,6 @@ function updatePagActive() {
     }
 }
 
-// switching timer \/
-
 let sliderProgressPercent = 0;
 let progressInterval = setInterval(updateProgress, 100);
 
@@ -331,8 +214,6 @@ function nextSlideAuto() {
         document.querySelector('.pag-active').insertAdjacentHTML('afterbegin', '<div class="pag-progress" style="width: 0%;"></div>');
     }, 100);
 }
-
-// touch support \/
 
 let x1 = 0;
 let x2 = 0;
